@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-22 10:09+0700\n"
+"POT-Creation-Date: 2023-08-22 15:06+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,169 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\catalog\templates\base_generic.html:20
+#: .\catalog\admin.py:35
+msgid "Availability"
+msgstr "Availability"
+
+#: .\catalog\models.py:8 .\catalog\models.py:20
+msgid "Genre"
+msgstr "Genre"
+
+#: .\catalog\models.py:8
+msgid "Enter a book genre (e.g.Science Fiction)"
+msgstr "Enter a book genre (e.g.Science Fiction)"
+
+#: .\catalog\models.py:16
+msgid "Title"
+msgstr "Title"
+
+#: .\catalog\models.py:17
+msgid "Author"
+msgstr "Author"
+
+#: .\catalog\models.py:18
+msgid "Summary"
+msgstr "Summary"
+
+#: .\catalog\models.py:18
+msgid "Enter a brief description of the book"
+msgstr "Enter a brief description of the book"
+
+#: .\catalog\models.py:19
+msgid ""
+"13 Character <a href=\"https://www.isbn-international.org/content/what-"
+"isbn\">ISBN number</a>"
+msgstr ""
+"13 Character <a href=\"https://www.isbn-international.org/content/what-"
+"isbn\">ISBN number</a>"
+
+#: .\catalog\models.py:20
+msgid "Select a genre for this book"
+msgstr "Select a genre for this book"
+
+#: .\catalog\models.py:39
+msgid "Unique ID for this particular bookacross whole library"
+msgstr "Unique ID for this particular bookacross whole library"
+
+#: .\catalog\models.py:40
+msgid "Book"
+msgstr "Book"
+
+#: .\catalog\models.py:41
+msgid "Imprint"
+msgstr "Imprint"
+
+#: .\catalog\models.py:42
+msgid "Due back"
+msgstr "Due back"
+
+#: .\catalog\models.py:43
+msgid "Maintenance"
+msgstr "Maintenance"
+
+#: .\catalog\models.py:43
+msgid "On loan"
+msgstr "On loan"
+
+#: .\catalog\models.py:43
+msgid "Available"
+msgstr "Available"
+
+#: .\catalog\models.py:43
+msgid "Reserved"
+msgstr "Reserved"
+
+#: .\catalog\models.py:44
+msgid "Status"
+msgstr "Status"
+
+#: .\catalog\models.py:44
+msgid "Book availability"
+msgstr "Book availability"
+
+#: .\catalog\models.py:55
+msgid "First name"
+msgstr "First name"
+
+#: .\catalog\models.py:56
+msgid "Last name"
+msgstr "Last name"
+
+#: .\catalog\models.py:57
+msgid "Birthday"
+msgstr "Birthday"
+
+#: .\catalog\models.py:58
+msgid "Died"
+msgstr "Died"
+
+#: .\catalog\templates\base_generic.html:21
 msgid "Home"
 msgstr "Home"
 
-#: .\catalog\templates\base_generic.html:21
+#: .\catalog\templates\base_generic.html:22
 msgid "All books"
 msgstr "All books"
 
-#: .\catalog\templates\base_generic.html:22
+#: .\catalog\templates\base_generic.html:23
 msgid "All authors"
 msgstr "All authors"
+
+#: .\catalog\templates\base_generic.html:33
+msgid "previous"
+msgstr "previous"
+
+#: .\catalog\templates\base_generic.html:36
+msgid "Page"
+msgstr "Page"
+
+#: .\catalog\templates\base_generic.html:36
+msgid " of "
+msgstr " of "
+
+#: .\catalog\templates\base_generic.html:39
+msgid "next"
+msgstr "next"
+
+#: .\catalog\templates\catalog\book_detail.html:5
+msgid "Title:"
+msgstr "Title:"
+
+#: .\catalog\templates\catalog\book_detail.html:7
+msgid "Author:"
+msgstr "Author:"
+
+#: .\catalog\templates\catalog\book_detail.html:8
+msgid "Summary:"
+msgstr "Summary:"
+
+#: .\catalog\templates\catalog\book_detail.html:10
+msgid "Language:"
+msgstr "Language:"
+
+#: .\catalog\templates\catalog\book_detail.html:11
+msgid "Genre:"
+msgstr "Genre:"
+
+#: .\catalog\templates\catalog\book_detail.html:13
+msgid "Copies"
+msgstr "Copies"
+
+#: .\catalog\templates\catalog\book_detail.html:20
+msgid "Due to be returned:"
+msgstr "Due to be returned:"
+
+#: .\catalog\templates\catalog\book_detail.html:22
+msgid "Imprint:"
+msgstr "Imprint:"
+
+#: .\catalog\templates\catalog\book_list.html:5
+msgid "Book List"
+msgstr "Book List"
+
+#: .\catalog\templates\catalog\book_list.html:15
+msgid "There are no books in the library."
+msgstr "There are no books in the library."
 
 #: .\catalog\templates\index.html:4
 msgid "Local Library Home"
