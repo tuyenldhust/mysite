@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Author, Genre, Book, BookInstance
+from django.utils.translation import gettext_lazy as _
 
 admin.site.register(Genre)
 # admin.site.register(Author)
@@ -31,7 +32,7 @@ class BookInstanceAdmin(admin.ModelAdmin):
         (None, {
             'fields': ('book', 'imprint', 'id')
         }),
-        ('Availability', {
+        (_('Availability'), {
             'fields': ('status', 'due_back')
         }),
     )
