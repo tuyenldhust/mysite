@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-24 15:27+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\templates\registration\logged_out.html:5
+msgid "Logged out!"
+msgstr "Bạn đã đăng xuất!"
+
+#: .\templates\registration\logged_out.html:6
+msgid "Click here to login again."
+msgstr "Nhấn vào đây để đăng nhập lại."
+
+#: .\templates\registration\login.html:5
+msgid "Your username and password didn't match. Please try again."
+msgstr "Tài khoản hoặc mật khẩu không đúng. Vui lòng thử lại."
+
+#: .\templates\registration\login.html:10
+msgid "Your account doesn't have access to this page. "
+msgstr "Tài khoản của bạn không có quyền truy cập trang này."
+
+#: .\templates\registration\login.html:10
+msgid "To proceed,please login with an account that has access."
+msgstr "Để tiếp tục, vui lòng đăng nhập với tài khoản có quyền truy cập."
+
+#: .\templates\registration\login.html:12
+msgid "Please login to see this page."
+msgstr "Vui lòng đăng nhập để xem trang này."
+
+#: .\templates\registration\login.html:27
+msgid "login button"
+msgstr "Đăng nhập"
+
+#: .\templates\registration\login.html:32
+msgid "Lost password?"
+msgstr "Quên mật khẩu?"
+
+#: .\templates\registration\password_reset_confirm.html:6
+msgid "Please enter (and confirm) your new password."
+msgstr "Vui lòng nhập (và xác nhận) mật khẩu mới."
+
+#: .\templates\registration\password_reset_confirm.html:10
+msgid "New password:"
+msgstr "Mật khẩu mới:"
+
+#: .\templates\registration\password_reset_confirm.html:14
+msgid "Confirm password:"
+msgstr "Xác nhận mật khẩu:"
+
+#: .\templates\registration\password_reset_confirm.html:19
+msgid "Change my password"
+msgstr "Đổi mật khẩu"
+
+#: .\templates\registration\password_reset_confirm.html:24
+msgid "Password reset failed"
+msgstr "Đặt lại mật khẩu thất bại"
+
+#: .\templates\registration\password_reset_confirm.html:25
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. "
+msgstr ""
+"Liên kết đặt lại mật khẩu không hợp lệ, có thể vì nó đã được sử dụng. "
+
+#: .\templates\registration\password_reset_confirm.html:25
+msgid "Please request a new password reset."
+msgstr "Vui lòng yêu cầu đặt lại mật khẩu mới."
+
+#: .\templates\registration\password_reset_done.html:5
+msgid "We've emailed you instructions for setting your password. "
+msgstr "Chúng tôi đã gửi cho bạn hướng dẫn đặt lại mật khẩu."
+
+#: .\templates\registration\password_reset_done.html:5
+msgid "If they haven't arrived ina few minutes, check your spam folder."
+msgstr "Nếu chưa nhận được trong vài phút, vui lòng kiểm tra thư mục spam."
+
+#: .\templates\registration\password_reset_email.html:2
+msgid "Someone asked for password reset for email "
+msgstr "Ai đó đã yêu cầu đặt lại mật khẩu cho email "
+
+#: .\templates\registration\password_reset_email.html:2
+msgid "Follow the link below:"
+msgstr "Nhấn vào liên kết bên dưới:"
+
+#: .\templates\registration\password_reset_form.html:11
+msgid "Reset password"
+msgstr "Đặt lại mật khẩu"

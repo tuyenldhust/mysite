@@ -1,7 +1,9 @@
 from django.db import models
 from django.urls import reverse
 import uuid # Required for unique book instances
-from django.utils.translation import gettext_lazy as _ 
+from django.utils.translation import gettext_lazy as _
+from django.contrib.auth.models import User
+from datetime import date
 
 class Genre(models.Model):
   """Model representing a book genre."""
@@ -40,15 +42,21 @@ class BookInstance(models.Model):
     book = models.ForeignKey('Book', verbose_name=_('Book'), on_delete=models.RESTRICT)
     imprint = models.CharField(_('Imprint'), max_length=200)
     due_back = models.DateField(_('Due back'), null=True, blank=True)
+    borrower = models.ForeignKey(User, verbose_name=_('Borrower'), on_delete=models.SET_NULL, null=True, blank=True)
     LOAN_STATUS = (('m', _('Maintenance')),('o', _('On loan')),('a', _('Available')),('r', _('Reserved')),)
     status = models.CharField(_('Status'), max_length=1,choices=LOAN_STATUS,blank=True,default='m',help_text=_('Book availability'),)
     
     class Meta:
        ordering = ['due_back']
+       permissions = (("can_mark_returned", _("Set book as returned")),)
     
     def __str__(self):
         """String for representing the Model object."""
         return f'{self.id} ({self.book.title})'
+    
+    @property
+    def is_overdue(self):
+        return self.due_back and date.today() > self.due_back
     
 class Author(models.Model):
     """Model representing an author."""

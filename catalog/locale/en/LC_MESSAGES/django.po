@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-23 10:16+0700\n"
+"POT-Creation-Date: 2023-08-24 15:27+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,31 +22,31 @@ msgstr ""
 msgid "Availability"
 msgstr "Availability"
 
-#: .\catalog\models.py:8 .\catalog\models.py:20
+#: .\catalog\models.py:10 .\catalog\models.py:22
 msgid "Genre"
 msgstr "Genre"
 
-#: .\catalog\models.py:8
+#: .\catalog\models.py:10
 msgid "Enter a book genre (e.g.Science Fiction)"
 msgstr "Enter a book genre (e.g.Science Fiction)"
 
-#: .\catalog\models.py:16
+#: .\catalog\models.py:18
 msgid "Title"
 msgstr "Title"
 
-#: .\catalog\models.py:17
+#: .\catalog\models.py:19
 msgid "Author"
 msgstr "Author"
 
-#: .\catalog\models.py:18
+#: .\catalog\models.py:20
 msgid "Summary"
 msgstr "Summary"
 
-#: .\catalog\models.py:18
+#: .\catalog\models.py:20
 msgid "Enter a brief description of the book"
 msgstr "Enter a brief description of the book"
 
-#: .\catalog\models.py:19
+#: .\catalog\models.py:21
 msgid ""
 "13 Character <a href=\"https://www.isbn-international.org/content/what-"
 "isbn\">ISBN number</a>"
@@ -54,63 +54,71 @@ msgstr ""
 "13 Character <a href=\"https://www.isbn-international.org/content/what-"
 "isbn\">ISBN number</a>"
 
-#: .\catalog\models.py:20
+#: .\catalog\models.py:22
 msgid "Select a genre for this book"
 msgstr "Select a genre for this book"
 
-#: .\catalog\models.py:39
+#: .\catalog\models.py:41
 msgid "Unique ID for this particular bookacross whole library"
 msgstr "Unique ID for this particular bookacross whole library"
 
-#: .\catalog\models.py:40
+#: .\catalog\models.py:42
 msgid "Book"
 msgstr "Book"
 
-#: .\catalog\models.py:41
+#: .\catalog\models.py:43
 msgid "Imprint"
 msgstr "Imprint"
 
-#: .\catalog\models.py:42
+#: .\catalog\models.py:44
 msgid "Due back"
 msgstr "Due back"
 
-#: .\catalog\models.py:43
+#: .\catalog\models.py:45
+msgid "Borrower"
+msgstr "Borrower"
+
+#: .\catalog\models.py:46
 msgid "Maintenance"
 msgstr "Maintenance"
 
-#: .\catalog\models.py:43
+#: .\catalog\models.py:46
 msgid "On loan"
 msgstr "On loan"
 
-#: .\catalog\models.py:43
+#: .\catalog\models.py:46
 msgid "Available"
 msgstr "Available"
 
-#: .\catalog\models.py:43
+#: .\catalog\models.py:46
 msgid "Reserved"
 msgstr "Reserved"
 
-#: .\catalog\models.py:44
+#: .\catalog\models.py:47
 msgid "Status"
 msgstr "Status"
 
-#: .\catalog\models.py:44
+#: .\catalog\models.py:47
 msgid "Book availability"
 msgstr "Book availability"
 
-#: .\catalog\models.py:55
+#: .\catalog\models.py:51
+msgid "Set book as returned"
+msgstr "Set book as returned"
+
+#: .\catalog\models.py:65
 msgid "First name"
 msgstr "First name"
 
-#: .\catalog\models.py:56
+#: .\catalog\models.py:66
 msgid "Last name"
 msgstr "Last name"
 
-#: .\catalog\models.py:57
+#: .\catalog\models.py:67
 msgid "Birthday"
 msgstr "Birthday"
 
-#: .\catalog\models.py:58
+#: .\catalog\models.py:68
 msgid "Died"
 msgstr "Died"
 
@@ -126,19 +134,35 @@ msgstr "All books"
 msgid "All authors"
 msgstr "All authors"
 
-#: .\catalog\templates\base_generic.html:33
+#: .\catalog\templates\base_generic.html:26
+msgid "User"
+msgstr "User"
+
+#: .\catalog\templates\base_generic.html:27
+msgid "My Borrowed"
+msgstr "My Borrowed"
+
+#: .\catalog\templates\base_generic.html:28
+msgid "Logout"
+msgstr "Logout"
+
+#: .\catalog\templates\base_generic.html:30
+msgid "Login"
+msgstr "Login"
+
+#: .\catalog\templates\base_generic.html:41
 msgid "previous"
 msgstr "previous"
 
-#: .\catalog\templates\base_generic.html:36
+#: .\catalog\templates\base_generic.html:44
 msgid "Page"
 msgstr "Page"
 
-#: .\catalog\templates\base_generic.html:36
+#: .\catalog\templates\base_generic.html:44
 msgid " of "
 msgstr " of "
 
-#: .\catalog\templates\base_generic.html:39
+#: .\catalog\templates\base_generic.html:47
 msgid "next"
 msgstr "next"
 
@@ -181,6 +205,14 @@ msgstr "Book List"
 #: .\catalog\templates\catalog\book_list.html:15
 msgid "There are no books in the library."
 msgstr "There are no books in the library."
+
+#: .\catalog\templates\catalog\bookinstance_list_borrowed_user.html:5
+msgid "Borrowed books"
+msgstr "Borrowed books"
+
+#: .\catalog\templates\catalog\bookinstance_list_borrowed_user.html:17
+msgid "There are no books borrowed."
+msgstr "There are no books borrowed."
 
 #: .\catalog\templates\index.html:4
 msgid "Local Library Home"
