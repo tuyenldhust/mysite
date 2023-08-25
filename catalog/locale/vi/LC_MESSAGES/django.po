@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-23 10:16+0700\n"
+"POT-Creation-Date: 2023-08-24 15:27+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,31 +22,31 @@ msgstr ""
 msgid "Availability"
 msgstr "Có sẵn"
 
-#: .\catalog\models.py:8 .\catalog\models.py:20
+#: .\catalog\models.py:10 .\catalog\models.py:22
 msgid "Genre"
 msgstr "Thể loại"
 
-#: .\catalog\models.py:8
+#: .\catalog\models.py:10
 msgid "Enter a book genre (e.g.Science Fiction)"
 msgstr "Nhập thể loại sách (ví dụ: Khoa học viễn tưởng)"
 
-#: .\catalog\models.py:16
+#: .\catalog\models.py:18
 msgid "Title"
 msgstr "Tên sách"
 
-#: .\catalog\models.py:17
+#: .\catalog\models.py:19
 msgid "Author"
 msgstr "Tác giả"
 
-#: .\catalog\models.py:18
+#: .\catalog\models.py:20
 msgid "Summary"
 msgstr "Tóm tắt"
 
-#: .\catalog\models.py:18
+#: .\catalog\models.py:20
 msgid "Enter a brief description of the book"
 msgstr "Nhập mô tả ngắn gọn về sách"
 
-#: .\catalog\models.py:19
+#: .\catalog\models.py:21
 msgid ""
 "13 Character <a href=\"https://www.isbn-international.org/content/what-"
 "isbn\">ISBN number</a>"
@@ -54,63 +54,71 @@ msgstr ""
 "13 ký tự <a href=\"https://www.isbn-international.org/content/what-isbn\">Số "
 "ISBN</a>"
 
-#: .\catalog\models.py:20
+#: .\catalog\models.py:22
 msgid "Select a genre for this book"
 msgstr "Chọn thể loại cho sách này"
 
-#: .\catalog\models.py:39
+#: .\catalog\models.py:41
 msgid "Unique ID for this particular bookacross whole library"
 msgstr "ID duy nhất cho sách này trong toàn bộ thư viện"
 
-#: .\catalog\models.py:40
+#: .\catalog\models.py:42
 msgid "Book"
 msgstr "Sách"
 
-#: .\catalog\models.py:41
+#: .\catalog\models.py:43
 msgid "Imprint"
 msgstr "In ấn"
 
-#: .\catalog\models.py:42
+#: .\catalog\models.py:44
 msgid "Due back"
 msgstr "Hạn trả"
 
-#: .\catalog\models.py:43
+#: .\catalog\models.py:45
+msgid "Borrower"
+msgstr "Người mượn"
+
+#: .\catalog\models.py:46
 msgid "Maintenance"
 msgstr "Bảo trì"
 
-#: .\catalog\models.py:43
+#: .\catalog\models.py:46
 msgid "On loan"
 msgstr "Đang mượn"
 
-#: .\catalog\models.py:43
+#: .\catalog\models.py:46
 msgid "Available"
 msgstr "Có sẵn"
 
-#: .\catalog\models.py:43
+#: .\catalog\models.py:46
 msgid "Reserved"
 msgstr "Đã đặt"
 
-#: .\catalog\models.py:44
+#: .\catalog\models.py:47
 msgid "Status"
 msgstr "Trạng thái"
 
-#: .\catalog\models.py:44
+#: .\catalog\models.py:47
 msgid "Book availability"
 msgstr "Có sẵn sách"
 
-#: .\catalog\models.py:55
+#: .\catalog\models.py:51
+msgid "Set book as returned"
+msgstr "Đặt sách là đã trả"
+
+#: .\catalog\models.py:65
 msgid "First name"
 msgstr "Họ"
 
-#: .\catalog\models.py:56
+#: .\catalog\models.py:66
 msgid "Last name"
 msgstr "Tên"
 
-#: .\catalog\models.py:57
+#: .\catalog\models.py:67
 msgid "Birthday"
 msgstr "Ngày sinh"
 
-#: .\catalog\models.py:58
+#: .\catalog\models.py:68
 msgid "Died"
 msgstr "Ngày mất"
 
@@ -126,19 +134,35 @@ msgstr "Tất cả sách"
 msgid "All authors"
 msgstr "Tất cả tác giả"
 
-#: .\catalog\templates\base_generic.html:33
+#: .\catalog\templates\base_generic.html:26
+msgid "User"
+msgstr "Người dùng"
+
+#: .\catalog\templates\base_generic.html:27
+msgid "My Borrowed"
+msgstr "Sách đã mượn"
+
+#: .\catalog\templates\base_generic.html:28
+msgid "Logout"
+msgstr "Đăng xuất"
+
+#: .\catalog\templates\base_generic.html:30
+msgid "Login"
+msgstr "Đăng nhập"
+
+#: .\catalog\templates\base_generic.html:41
 msgid "previous"
 msgstr "trước"
 
-#: .\catalog\templates\base_generic.html:36
+#: .\catalog\templates\base_generic.html:44
 msgid "Page"
 msgstr "Trang"
 
-#: .\catalog\templates\base_generic.html:36
+#: .\catalog\templates\base_generic.html:44
 msgid " of "
 msgstr "/"
 
-#: .\catalog\templates\base_generic.html:39
+#: .\catalog\templates\base_generic.html:47
 msgid "next"
 msgstr "sau"
 
@@ -181,6 +205,14 @@ msgstr "Danh sách sách"
 #: .\catalog\templates\catalog\book_list.html:15
 msgid "There are no books in the library."
 msgstr "Không có sách nào trong thư viện."
+
+#: .\catalog\templates\catalog\bookinstance_list_borrowed_user.html:5
+msgid "Borrowed books"
+msgstr "Sách đã mượn"
+
+#: .\catalog\templates\catalog\bookinstance_list_borrowed_user.html:17
+msgid "There are no books borrowed."
+msgstr "Không có sách nào được mượn."
 
 #: .\catalog\templates\index.html:4
 msgid "Local Library Home"
