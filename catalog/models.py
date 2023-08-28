@@ -12,6 +12,15 @@ class Genre(models.Model):
   def __str__(self):
     """String for representing the Model object."""
     return self.name
+  
+class Language(models.Model):
+    """Model representing a Language (e.g. English, French, Japanese, etc.)"""
+    name = models.CharField(verbose_name=_('Language'), max_length=200,
+                            help_text=_("Enter the book's natural language (e.g. English, French, Japanese etc.)"))
+
+    def __str__(self):
+        """String for representing the Model object (in Admin site etc.)"""
+        return self.name
 
 class Book(models.Model):
   """Model representing a book (but not a specific copy of a book)."""
@@ -20,7 +29,11 @@ class Book(models.Model):
   summary = models.TextField(_('Summary'), max_length=1000, help_text=_('Enter a brief description of the book'))
   isbn = models.CharField('ISBN', max_length=13, unique=True,help_text=_('13 Character <a href="https://www.isbn-international.org/content/what-isbn">ISBN number</a>'))
   genre = models.ManyToManyField(Genre, verbose_name=_('Genre'), help_text=_('Select a genre for this book'))
-  
+  language = models.ForeignKey('Language',verbose_name=_('Language'), on_delete=models.SET_NULL, null=True)
+
+  class Meta:
+    ordering = ['title', 'author']
+
   def __str__(self):
     """String for representing the Model object."""
     return self.title
@@ -31,7 +44,6 @@ class Book(models.Model):
   
   def display_genre(self):
     """Create a string for the Genre. This is required to display genre in Admin."""
-
     return ', '.join(genre.name for genre in self.genre.all()[:3])
 
   display_genre.short_description = 'Genre'
