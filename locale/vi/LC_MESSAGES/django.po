@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-24 15:27+0700\n"
+"POT-Creation-Date: 2023-08-28 17:10+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
 #: .\templates\registration\logged_out.html:5
 msgid "Logged out!"
 msgstr "Bạn đã đăng xuất!"
@@ -49,6 +50,14 @@ msgstr "Đăng nhập"
 msgid "Lost password?"
 msgstr "Quên mật khẩu?"
 
+#: .\templates\registration\password_reset_complete.html:5
+msgid "The password has been changed!"
+msgstr "Mật khẩu đã được thay đổi!"
+
+#: .\templates\registration\password_reset_complete.html:6
+msgid "log in again?"
+msgstr "đăng nhập lại?"
+
 #: .\templates\registration\password_reset_confirm.html:6
 msgid "Please enter (and confirm) your new password."
 msgstr "Vui lòng nhập (và xác nhận) mật khẩu mới."
@@ -73,8 +82,7 @@ msgstr "Đặt lại mật khẩu thất bại"
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. "
-msgstr ""
-"Liên kết đặt lại mật khẩu không hợp lệ, có thể vì nó đã được sử dụng. "
+msgstr "Liên kết đặt lại mật khẩu không hợp lệ, có thể vì nó đã được sử dụng. "
 
 #: .\templates\registration\password_reset_confirm.html:25
 msgid "Please request a new password reset."

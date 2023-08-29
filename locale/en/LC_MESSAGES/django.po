@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-24 15:27+0700\n"
+"POT-Creation-Date: 2023-08-28 17:10+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: .\templates\registration\logged_out.html:5
 msgid "Logged out!"
 msgstr "Logged out!"
@@ -48,6 +49,14 @@ msgstr "Login"
 #: .\templates\registration\login.html:32
 msgid "Lost password?"
 msgstr "Lost password?"
+
+#: .\templates\registration\password_reset_complete.html:5
+msgid "The password has been changed!"
+msgstr "The password has been changed!"
+
+#: .\templates\registration\password_reset_complete.html:6
+msgid "log in again?"
+msgstr "log in again?"
 
 #: .\templates\registration\password_reset_confirm.html:6
 msgid "Please enter (and confirm) your new password."
